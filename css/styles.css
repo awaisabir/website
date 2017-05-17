@@ -72,8 +72,8 @@ blockquote>small {
 
 .arrow {
     position: absolute;
-    bottom: 0;
     left: 50%;
+    bottom: 0;
 }
 
 .expand {
@@ -101,20 +101,13 @@ blockquote>small {
     margin-top: 150px;
 }
 
-@media screen and (max-width: 768px) {
-    .flex-container ul li a {
-        font-size: 12px;
+@media screen and (max-width: 535px) {
+    .flex-container {
+        align-items: center;
+        justify-content: center;
+        padding-left: 32.5%;
     }
-    .flex-container img {
-        height: 75px;
-    }
-}
-
-@media screen and (max-width: 520px) {
     .flex-container ul li a {
         display: none;
-    }
-    .flex-container img {
-        justify-content: center;
     }
 }
