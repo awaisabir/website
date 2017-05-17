@@ -50,6 +50,10 @@ blockquote>small {
 }
 
 .flex-container {
+    transition: 0.5s;
+    background-color: white;
+    position: relative;
+    z-index: 1;
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -57,6 +61,10 @@ blockquote>small {
     justify-content: space-around;
     align-items: center;
     height: 150px;
+}
+
+.flex-container ul li a {
+    transition: 0.2s;
 }
 
 .flex-container ul {
@@ -68,6 +76,7 @@ blockquote>small {
 }
 
 .flex-container img {
+    transition: 0.5s;
     height: 100px;
 }
 
@@ -166,8 +175,20 @@ blockquote>small {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .flex-container {
+        transition: 0.5s;
+        height: 100px;
+    }
+    .flex-container img {
+        transition: 0.5s;
+        height: 75px;
+    }
+}
+
 @media screen and (max-width: 535px) {
     .flex-container ul li a {
+        transition: 0.2s;
         display: none;
     }
     blockquote {
@@ -175,9 +196,9 @@ blockquote>small {
         margin-top: -20%;
     }
     blockquote>small {
-        font-size: 15px;
+        font-size: 17px;
     }
     #colin {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
