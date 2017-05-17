@@ -1,0 +1,48 @@
+blockquote {
+    margin-top: -15%;
+    color: white;
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+}
+
+blockquote>small {
+    color: white;
+    font-size: 20px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    background-image: url('../images/landing.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    animation: bounce 2s infinite;
+}
+
+.quote {
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 535px) {
+    blockquote {
+        font-size: 20px;
+        margin-top: -20%;
+    }
+    blockquote>small {
+        font-size: 17px;
+    }
+    #colin {
+        font-size: 25px;
+    }
+}
