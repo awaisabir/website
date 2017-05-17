@@ -26,6 +26,10 @@ a:hover {
 blockquote {
     font-size: 25px;
     color: white;
+    border-left-width: 2px;
+    border-color: white;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 5px;
 }
 
 blockquote>small {
@@ -34,7 +38,7 @@ blockquote>small {
 }
 
 .landing {
-    background-image: url('../images/landing5.jpg');
+    background-image: url('../images/landing.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,10 +47,10 @@ blockquote>small {
 
 .flex-container {
     display: flex;
-    width: 100%;
+    width: 89%;
     margin: 0 auto;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 150px;
 }
@@ -95,14 +99,22 @@ blockquote>small {
     position: absolute;
     top: 40%;
     bottom: 60%;
-    border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        font-size: 17px;
+    .flex-container ul li a {
+        font-size: 12px;
     }
     .flex-container img {
         height: 75px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .flex-container ul li a {
+        font-size: 10px;
+    }
+    .flex-container img {
+        height: 50px;
     }
 }
