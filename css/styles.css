@@ -102,11 +102,6 @@ blockquote>small {
 }
 
 @media screen and (max-width: 535px) {
-    .flex-container {
-        align-items: center;
-        justify-content: center;
-        padding-left: 32.5%;
-    }
     .flex-container ul li a {
         display: none;
     }
