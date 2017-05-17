@@ -72,8 +72,8 @@ blockquote>small {
 
 .arrow {
     position: absolute;
-    left: 50%;
-    bottom: 0;
+    bottom: 0px;
+    right: 25%;
 }
 
 .expand {
@@ -104,5 +104,10 @@ blockquote>small {
 @media screen and (max-width: 535px) {
     .flex-container ul li a {
         display: none;
+    }
+    .arrow {
+        position: absolute;
+        right: 42.5%;
+        bottom: 0px;
     }
 }
