@@ -172,6 +172,7 @@ blockquote>small {
     }
     blockquote {
         font-size: 20px;
+        margin-top: -20%;
     }
     blockquote>small {
         font-size: 15px;
