@@ -24,6 +24,7 @@ a:hover {
 }
 
 blockquote {
+    margin-top: -15%;
     color: white;
     border: 1px solid white;
     border-top: none;
