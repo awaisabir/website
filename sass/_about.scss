@@ -12,14 +12,27 @@
 
 .description {
     font-size: 25px;
+    margin-top: 50px;
 }
 
 .me {
     margin-top: 75px;
 }
 
+#about {
+    margin-top: 75px;
+}
+
+.owl-carousel {
+    margin-top: 75px;
+}
+
 @media (max-width:780px) {
     .m-center {
         text-align: center;
+    }
+    .icons {
+        flex-direction: row;
+        justify-content: center;
     }
 }
