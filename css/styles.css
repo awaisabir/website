@@ -56,14 +56,6 @@ a:hover {
     transition: 0.2s;
     display: none; }
 
-  .navigation {
-    transition: 0.5s;
-    height: 100px; }
-
-  .navigation img {
-    transition: 0.5s;
-    height: 75px; }
-
   #nav-icon1 {
     display: block; } }
 blockquote {
