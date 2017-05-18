@@ -1,6 +1,8 @@
+/*height, body*/
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  color: #173e43; }
 
 header {
   height: 150px;
@@ -14,7 +16,7 @@ a:hover {
   text-decoration: none;
   color: #173e43; }
 
-.flex-container {
+.navigation {
   transition: 0.5s;
   background-color: white;
   position: relative;
@@ -27,32 +29,32 @@ a:hover {
   align-items: center;
   height: 150px; }
 
-.flex-container ul li a {
+.navigation ul li a {
   transition: 0.2s; }
 
-.flex-container ul {
+.navigation ul {
   display: flex; }
 
-.flex-container ul li {
+.navigation ul li {
   padding: 25px; }
 
-.flex-container img {
+.navigation img {
   transition: 0.5s;
   height: 100px; }
 
 #nav-icon1 {
   display: none; }
 
-@media screen and (max-width: 768px) {
-  .flex-container ul li a {
+@media (max-width: 768px) {
+  .navigation ul li a {
     transition: 0.2s;
     display: none; }
 
-  .flex-container {
+  .navigation {
     transition: 0.5s;
     height: 100px; }
 
-  .flex-container img {
+  .navigation img {
     transition: 0.5s;
     height: 75px; }
 
@@ -89,7 +91,7 @@ blockquote > small {
 .quote {
   margin-top: 150px; }
 
-@media screen and (max-width: 535px) {
+@media (max-width: 520px) {
   blockquote {
     font-size: 20px;
     margin-top: -20%; }
@@ -181,7 +183,6 @@ blockquote > small {
   height: 9px;
   width: 100%;
   background: #fae596;
-  border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -201,5 +202,66 @@ blockquote > small {
 
 #nav-icon1 span:nth-child(3) {
   top: 36px; }
+
+.column {
+  flex-basis: 100%; }
+
+.flex-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px; }
+
+.twenty-five {
+  flex: 2.5; }
+
+.fifty {
+  flex: 5; }
+
+.seventy-five {
+  flex: 7.5; }
+
+@media screen and (max-width: 780px) {
+  .grid-row {
+    flex-direction: column;
+    justify-content: space-around; } }
+@media (min-width: 768px) {
+  .flex-container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .flex-container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .flex-container {
+    width: 1170px; } }
+.heading {
+  font-size: 50px; }
+
+#underline {
+  border-bottom: 5px solid #fae596; }
+
+.card-title {
+  font-weight: 700; }
+
+.description {
+  font-size: 25px; }
+
+.me {
+  margin-top: 75px; }
+
+@media (max-width: 780px) {
+  .m-center {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

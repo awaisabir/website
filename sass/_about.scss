@@ -1,0 +1,25 @@
+.heading {
+    font-size: 50px;
+}
+
+#underline {
+    border-bottom: 5px solid $mustard;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.description {
+    font-size: 25px;
+}
+
+.me {
+    margin-top: 75px;
+}
+
+@media (max-width:780px) {
+    .m-center {
+        text-align: center;
+    }
+}

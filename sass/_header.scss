@@ -13,7 +13,7 @@ a:hover {
     color: $dark-green;
 }
 
-.flex-container {
+.navigation {
     transition: 0.5s;
     background-color: white;
     position: relative;
@@ -27,19 +27,19 @@ a:hover {
     height: 150px;
 }
 
-.flex-container ul li a {
+.navigation ul li a {
     transition: 0.2s;
 }
 
-.flex-container ul {
+.navigation ul {
     display: flex;
 }
 
-.flex-container ul li {
+.navigation ul li {
     padding: 25px;
 }
 
-.flex-container img {
+.navigation img {
     transition: 0.5s;
     height: 100px;
 }
@@ -48,16 +48,16 @@ a:hover {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .flex-container ul li a {
+@media (max-width: 768px) {
+    .navigation ul li a {
         transition: 0.2s;
         display: none;
     }
-    .flex-container {
+    .navigation {
         transition: 0.5s;
         height: 100px;
     }
-    .flex-container img {
+    .navigation img {
         transition: 0.5s;
         height: 75px;
     }
