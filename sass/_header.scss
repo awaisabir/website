@@ -53,6 +53,7 @@ a:hover {
 .white {
     transition: 0.5s;
     background-color: white;
+    border-bottom: 1px solid black;
 }
 
 @media (max-width: 768px) {
