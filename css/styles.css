@@ -4,6 +4,7 @@ body {
   height: 100%;
   color: #173e43; }
 
+/* NAVBAR CSS START*/
 header {
   height: 150px;
   background-color: transparent;
@@ -58,6 +59,8 @@ a:hover {
 
   #nav-icon1 {
     display: block; } }
+/* NAVBAR CSS END*/
+/* LANDING PAGE CSS START*/
 blockquote {
   margin-top: -15%;
   color: white;
@@ -99,6 +102,8 @@ blockquote > small {
 
   #colin {
     font-size: 25px; } }
+/* LANDING PAGE CSS END*/
+/*  NAV HOVER CSS START */
 .expand {
   font-weight: bold;
   position: relative;
@@ -117,6 +122,8 @@ blockquote > small {
   transform: scaleX(1);
   transform-origin: 0 50%; }
 
+/*  NAV HOVER CSS END */
+/*  BOUNCE ANIMATION CSS START */
 @keyframes bounce {
   0%,
     20%,
@@ -161,7 +168,8 @@ blockquote > small {
     -o-transform: translateY(-30px); }
   60% {
     -o-transform: translateY(-15px); } }
-/* Icon 1 */
+/*  BOUNCE ANIMATION CSS END */
+/* hAMBURGER ICON CSS START*/
 #nav-icon1 {
   width: 60px;
   height: 25px;
@@ -201,6 +209,8 @@ blockquote > small {
 #nav-icon1 span:nth-child(3) {
   top: 36px; }
 
+/* HAMBURGER ICON CSS END*/
+/*  GRID CSS START */
 .column {
   flex-basis: 100%; }
 
@@ -243,6 +253,8 @@ blockquote > small {
 @media (min-width: 1200px) {
   .flex-container {
     width: 1170px; } }
+/*  GRID CSS END */
+/*  ABOUT SECTION CSS START */
 .heading {
   font-size: 50px; }
 
@@ -272,5 +284,6 @@ blockquote > small {
   .icons {
     flex-direction: row;
     justify-content: center; } }
+/*  ABOUT SECTION CSS END */
 
 /*# sourceMappingURL=styles.css.map */
