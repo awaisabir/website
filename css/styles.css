@@ -258,9 +258,6 @@ blockquote > small {
 .heading {
   font-size: 50px; }
 
-#underline {
-  border-bottom: 5px solid #fae596; }
-
 .card-title {
   font-weight: 700; }
 
@@ -271,11 +268,23 @@ blockquote > small {
 .me {
   margin-top: 75px; }
 
+.owl-carousel {
+  margin-top: 75px; }
+
+.experience img {
+  padding: 10px; }
+
+#underline {
+  border-bottom: 5px solid #fae596; }
+
 #about {
   margin-top: 75px; }
 
-.owl-carousel {
-  margin-top: 75px; }
+#carleton-container {
+  align-items: flex-start; }
+
+#TA {
+  font-weight: 700; }
 
 @media (max-width: 780px) {
   .m-center {
@@ -283,7 +292,12 @@ blockquote > small {
 
   .icons {
     flex-direction: row;
-    justify-content: center; } }
+    justify-content: center; }
+
+  #carleton {
+    text-align: center;
+    width: 50%;
+    height: 75%; } }
 /*  ABOUT SECTION CSS END */
 
 /*# sourceMappingURL=styles.css.map */

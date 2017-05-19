@@ -4,10 +4,6 @@
     font-size: 50px;
 }
 
-#underline {
-    border-bottom: 5px solid $mustard;
-}
-
 .card-title {
     font-weight: 700;
 }
@@ -21,15 +17,31 @@
     margin-top: 75px;
 }
 
-#about {
-    margin-top: 75px;
-}
-
 .owl-carousel {
     margin-top: 75px;
 }
 
-#education-experience {}
+.experience {
+    img {
+        padding: 10px;
+    }
+}
+
+#underline {
+    border-bottom: 5px solid $mustard;
+}
+
+#about {
+    margin-top: 75px;
+}
+
+#carleton-container {
+    align-items: flex-start;
+}
+
+#TA {
+    font-weight: 700;
+}
 
 @media (max-width:780px) {
     .m-center {
@@ -39,7 +51,14 @@
         flex-direction: row;
         justify-content: center;
     }
+    #carleton {
+        text-align: center;
+        width: 50%;
+        height: 75%;
+    }
 }
+
+@media (min-width: 780px) {}
 
 
 /*  ABOUT SECTION CSS END */
