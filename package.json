@@ -1,0 +1,12 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "webiste",
+  "main": "server.js",
+  "repository": "https://github.com/awaisabir/website",
+  "author": "awaisabir <awaisabirqureshi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
