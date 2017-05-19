@@ -1,0 +1,303 @@
+/*height, body*/
+html,
+body {
+  height: 100%;
+  color: #173e43; }
+
+/* NAVBAR CSS START*/
+header {
+  height: 150px;
+  background-color: transparent;
+  font-size: 25px; }
+
+a {
+  color: #173e43; }
+
+a:hover {
+  text-decoration: none;
+  color: #173e43; }
+
+.navigation {
+  transition: 0.5s;
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  top: 0; }
+
+.navigation ul li a {
+  transition: 0.2s; }
+
+.navigation ul {
+  display: flex; }
+
+.navigation ul li {
+  padding: 25px; }
+
+.navigation img {
+  transition: 0.5s;
+  height: 100px; }
+
+#nav-icon1 {
+  display: none; }
+
+.white {
+  transition: 0.5s;
+  background-color: white;
+  border-bottom: 1px solid black; }
+
+@media (max-width: 768px) {
+  .navigation ul li a {
+    transition: 0.2s;
+    display: none; }
+
+  #nav-icon1 {
+    display: block; } }
+/* NAVBAR CSS END*/
+/* LANDING PAGE CSS START*/
+blockquote {
+  margin-top: -15%;
+  color: white;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none; }
+
+blockquote > small {
+  color: white;
+  font-size: 20px; }
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+  background-image: url("../images/landing.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  animation: bounce 2s infinite; }
+
+.quote {
+  margin-top: 150px; }
+
+@media (max-width: 520px) {
+  blockquote {
+    font-size: 20px;
+    margin-top: -20%; }
+
+  blockquote > small {
+    font-size: 17px; }
+
+  #colin {
+    font-size: 25px; } }
+/* LANDING PAGE CSS END*/
+/*  NAV HOVER CSS START */
+.expand {
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  display: inline-block; }
+
+.expand:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #fae596;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%; }
+
+.expand:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%; }
+
+/*  NAV HOVER CSS END */
+/*  BOUNCE ANIMATION CSS START */
+@keyframes bounce {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+@-webkit-keyframes bounce {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -moz-transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px); } }
+@-o-keyframes bounce {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -o-transform: translateY(0); }
+  40% {
+    -o-transform: translateY(-30px); }
+  60% {
+    -o-transform: translateY(-15px); } }
+/*  BOUNCE ANIMATION CSS END */
+/* hAMBURGER ICON CSS START*/
+#nav-icon1 {
+  width: 60px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon1 span {
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #fae596;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px; }
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px; }
+
+/* HAMBURGER ICON CSS END*/
+/*  GRID CSS START */
+.column {
+  flex-basis: 100%; }
+
+.flex-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px; }
+
+.twenty-five {
+  flex: 2.5; }
+
+.fifty {
+  flex: 5; }
+
+.seventy-five {
+  flex: 7.5; }
+
+@media screen and (max-width: 780px) {
+  .grid-row {
+    flex-direction: column;
+    justify-content: space-around; } }
+@media (min-width: 768px) {
+  .flex-container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .flex-container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .flex-container {
+    width: 1170px; } }
+/*  GRID CSS END */
+/*  ABOUT SECTION CSS START */
+.heading {
+  font-size: 50px; }
+
+.card-title {
+  font-weight: 700; }
+
+.description {
+  font-size: 25px;
+  margin-top: 50px; }
+
+.me {
+  margin-top: 75px; }
+
+.owl-carousel {
+  margin-top: 75px; }
+
+.experience img {
+  padding: 10px; }
+
+#underline {
+  border-bottom: 5px solid #fae596; }
+
+#about {
+  margin-top: 75px; }
+
+#carleton-container {
+  align-items: flex-start; }
+
+#TA {
+  font-weight: 700; }
+
+@media (max-width: 780px) {
+  .m-center {
+    text-align: center; }
+
+  .icons {
+    flex-direction: row;
+    justify-content: center; }
+
+  #carleton {
+    text-align: center;
+    width: 50%;
+    height: 75%; } }
+/*  ABOUT SECTION CSS END */
+
+/*# sourceMappingURL=styles.css.map */
