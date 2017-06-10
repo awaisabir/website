@@ -6,11 +6,11 @@ let app = express()
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/index.html'))
+    res.sendFile(path.join(__dirname + '/views/index.html'))
 })
 
 app.get('/projects', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/projects.html'))
+    res.sendFile(path.join(__dirname + '/views/projects.html'))
 })
 
 app.get('*', (req, res) => {
