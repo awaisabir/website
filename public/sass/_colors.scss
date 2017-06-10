@@ -11,3 +11,7 @@ body {
     height: 100%;
     color: $dark-green;
 }
+
+a:focus {
+    color: inherit !important;
+}

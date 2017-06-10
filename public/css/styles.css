@@ -4,6 +4,9 @@ body {
   height: 100%;
   color: #173e43; }
 
+a:focus {
+  color: inherit !important; }
+
 /* NAVBAR CSS START*/
 header {
   height: 150px;
