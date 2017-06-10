@@ -258,9 +258,6 @@ blockquote > small {
 .heading {
   font-size: 50px; }
 
-.card-title {
-  font-weight: 700; }
-
 .description {
   font-size: 25px;
   margin-top: 50px; }
@@ -274,16 +271,16 @@ blockquote > small {
 .experience img {
   padding: 10px; }
 
-#underline {
+.underline {
   border-bottom: 5px solid #fae596; }
 
 #about {
   margin-top: 75px; }
 
-#carleton-container {
-  align-items: flex-start; }
+#carleton {
+  height: 50%; }
 
-#TA {
+.emphasis {
   font-weight: 700; }
 
 @media (max-width: 780px) {
@@ -294,10 +291,21 @@ blockquote > small {
     flex-direction: row;
     justify-content: center; }
 
-  #carleton {
+  .information img {
     text-align: center;
-    width: 50%;
-    height: 75%; } }
+    width: 45%; }
+
+  #rally-engine {
+    height: 100%; }
+
+  #carleton {
+    width: 35%; } }
+@media (min-width: 780px) {
+  .jobs-description {
+    margin-top: -143px; }
+
+  #jobs {
+    margin-top: -150px; } }
 /*  ABOUT SECTION CSS END */
 
 /*# sourceMappingURL=styles.css.map */
