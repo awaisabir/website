@@ -13,6 +13,11 @@ app.get('/projects', (req, res) => {
     res.sendFile(path.join(__dirname + '/views/projects.html'))
 })
 
+app.get('/resume', (req, res) => {
+    res.contentType('application/pdf')
+    res.sendFile(path.join(__dirname + '/public/resume/Resume.pdf'))
+})
+
 app.get('*', (req, res) => {
     res.send('404')
 })
