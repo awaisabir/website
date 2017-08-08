@@ -16,5 +16,9 @@ $(document).ready(function() {
         // $('#nav-icon1').css({'display': 'flex', 'z-index': '0'})       
     })
 
+    $('.sidenav a').click(function() {
+        $('.sidenav').css({'width': '0'})
+    })
+
 });
 
