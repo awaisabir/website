@@ -1,0 +1,29 @@
+.projects {
+    .column {
+        transition: 0.5s;
+    }
+    .column:hover {
+        transition: 0.5s;
+        box-shadow: 6px 4px 1px $dark-green;
+    }
+}
+
+.project-img {
+    padding: 25px;
+    border-bottom: 3px solid $mustard;
+    img {
+        width: 100%;
+    }
+}
+
+.project-tech {
+    img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.project-links {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
