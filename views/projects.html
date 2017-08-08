@@ -4,12 +4,79 @@
 <head>
     <title>Muhammad Awais Qureshi</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/yeti/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    Hello
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navigation">
+            <a href="#"><img id="logo" src="../images/logo.png" alt="It's me"></a>
+            <ul>
+                <li><a href="#about" class="expand">About</a></li>
+                <li><a href="#background" class="expand">Background</a></li>
+                <li><a href="/projects" class="expand">Projects</a></li>
+                <li><a href="/resume" target="_blank" class="expand">Resume</a></li>
+                <li id="nav-icon1"><span></span><span></span><span></span></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="flex-container">
+        <section id="projects">
+            <div class="projects grid-row text-center">
+                <div class="column">
+                    <div class="project-img">
+                        <img src="images/projects/Honors/recipe.jpg" alt="">
+                    </div>
+                    <div class="project-title">
+                        <h2>Recipe Viewer</h2>
+                    </div>
+                    <div class="project-tech grid-row ">
+                        <div>
+                            <img src="../images/tools/node.svg" height="50px" width="50px" />
+                            <img src="../images/tools/jquery.svg" height="50px" width="50px" />
+                            <img src="../images/tools/mongodb.svg" height="50px" width="50px" />
+                            <img src="../images/tools/html5.svg" height="50px" width="50px" />
+                            <img src="../images/tools/css3.svg" height="50px" width="50px" />
+                        </div>
+                    </div>
+                    <div class="grid-row project-links">
+                        <i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="project-img">
+                        Image
+                    </div>
+                    <div class="project-title">
+                        Title
+                    </div>
+                    <div class="project-tech">
+                        Technologies
+                    </div>
+                    <div class="project-links">
+                        Github
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="scripts/scroll.js" type="text/javascript"></script>
+    <script src="scripts/init.js" type="text/javascript"></script>
+    <script src="scripts/hamburger.js" type="text/javascript"></script>
 </body>
 
 </html>
