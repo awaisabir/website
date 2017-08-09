@@ -369,4 +369,8 @@ blockquote > small {
   margin-top: 25px;
   margin-bottom: 15px; }
 
+.bulma {
+  height: 60px !important;
+  width: 125px !important; }
+
 /*# sourceMappingURL=styles.css.map */
