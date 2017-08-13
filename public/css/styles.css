@@ -373,4 +373,16 @@ blockquote > small {
   height: 60px !important;
   width: 125px !important; }
 
+.v-box {
+  height: 75px !important;
+  width: 125px !important; }
+
+.ne-db {
+  width: 100px !important;
+  height: 30px !important; }
+
+.express {
+  width: 75px !important;
+  height: 40px !important; }
+
 /*# sourceMappingURL=styles.css.map */
