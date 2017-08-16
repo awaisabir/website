@@ -56,6 +56,9 @@ a:hover {
   border-bottom: 1px solid black; }
 
 @media (max-width: 768px) {
+  .navigation {
+    height: 20px; }
+
   .navigation ul li a {
     transition: 0.2s;
     display: none; }
@@ -143,6 +146,9 @@ blockquote > small {
 
   #colin {
     font-size: 25px; } }
+@media (max-width: 768px) {
+  .landing {
+    margin-top: -100px; } }
 /* LANDING PAGE CSS END*/
 /*  NAV HOVER CSS START */
 .expand {
@@ -301,7 +307,8 @@ blockquote > small {
 
 .description {
   font-size: 25px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-weight: 100; }
 
 .owl-carousel {
   margin-top: 75px; }
