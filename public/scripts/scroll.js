@@ -17,9 +17,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
 
-        if (scroll >= 350) {
-            $(".navigation").find('img').css({ height: '75px' });
-            $(".navigation").css({ height: '100px' });
+        if (scroll >= 250) {
+            $(".navigation").find('img').css({ height: '65px' });
+            $(".navigation").css({ height: '80px' });
             $(".navigation").addClass("white");
         } else {
             $(".navigation").removeClass("white");
