@@ -1,7 +1,18 @@
+const https = require('https');
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+const helmet = require('helmet');
 const PORT = process.env.PORT || 80;
-let app = express();
+
+const app = express();
+app.use(helmet());
+// setup
+const config = require('./config');
+const options = {
+    cert: fs.readFile(config.cert),
+    key:  fs.readFile(config.key)
+};
 
 app.use(express.static(__dirname + '/public'));
 
@@ -22,9 +33,5 @@ app.get('*', (req, res) => {
     res.send('404');
 });
 
-app.listen(PORT, err => {
-    if (err)
-        console.log(err);
-    else
-        console.log(`Server started`);
-});
+app.listen(PORT);
+https.createServer(options, app).listen(8080);
