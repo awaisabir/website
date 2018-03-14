@@ -1,20 +1,20 @@
 const https = require('https');
+const http  = require('http');
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const helmet = require('helmet');
 const PORT = process.env.PORT || 80;
 
 const app = express();
-app.use(helmet());
+
 // setup
 const config = require('./config');
 const options = {
-    cert: fs.readFile(config.cert),
-    key:  fs.readFile(config.key)
+    cert: fs.readFileSync(config.cert),
+    key:  fs.readFileSync(config.key)
 };
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public', {dotfiles:'allow'}));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/views/index.html'));
@@ -33,5 +33,7 @@ app.get('*', (req, res) => {
     res.send('404');
 });
 
-app.listen(PORT);
-https.createServer(options, app).listen(8080);
+http.createServer(app).listen(80);
+https.createServer(options, app).listen(443);
+	
+
